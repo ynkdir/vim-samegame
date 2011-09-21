@@ -20,7 +20,7 @@ function! s:random()
 endfunction
 
 function! s:choice(seq)
-  return a:seq[float2nr(random#random() * len(a:seq))]
+  return a:seq[float2nr(s:random() * len(a:seq))]
 endfunction
 
 if has('reltime')
